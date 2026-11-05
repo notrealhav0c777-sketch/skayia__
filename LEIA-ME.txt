@@ -1,0 +1,11 @@
+SKAY.IA - como publicar (uma vez só, na SUA conta)
+1. Crie uma chave de API na OpenAI (platform.openai.com/api-keys) e outra na Anthropic (console.anthropic.com/settings/keys), com crédito e limite de gasto.
+2. Suba esta pasta para um repositório no GitHub e importe na Vercel (ou use "vercel" na pasta).
+3. Na Vercel: Settings > Environment Variables. Crie:
+   OPENAI_API_KEY      = sua chave OpenAI
+   ANTHROPIC_API_KEY   = sua chave Anthropic
+   ACCESS_CODE         = (recomendado) uma senha; quem não tiver o código não usa e não gasta seu crédito
+   HOURLY_LIMIT        = (opcional) mensagens por hora por pessoa, padrão 30
+   OPENAI_MODEL / ANTHROPIC_MODEL = (opcional) nomes dos modelos
+4. Faça o Redeploy. Quem abrir o site não precisa logar em nada.
+Atenção: quem paga o uso é você. Nunca coloque as chaves dentro do index.html.
